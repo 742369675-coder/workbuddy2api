@@ -249,6 +249,7 @@ func main() {
 		Pool:         p,
 		Upstream:     up,
 		APIKey:       cfg.APIKey,
+		AuthKeys:     buildAuthKeys(cfg),
 		Session:      sessRouter,
 		StickyCount:  sessCount,
 		RedisMode:    redisMode,
